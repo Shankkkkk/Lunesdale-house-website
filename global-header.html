@@ -1,0 +1,70 @@
+<!-- Global header -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#a6d391", "primary-container": "#567f46", "surface-tint": "#416831", "on-secondary-fixed": "#111c2d", "surface": "#f5faff", "secondary-container": "#d5e0f8", "inverse-on-surface": "#ecf1f6", "secondary": "#545f73", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "inverse-primary": "#a6d391", "on-primary-fixed": "#042100", "outline-variant": "#c2c9bb", "error": "#ba1a1a", "inverse-surface": "#2b3135", "on-tertiary-container": "#fffbff", "tertiary": "#6f4d8e", "surface-variant": "#dee3e8", "on-primary-container": "#f8ffee", "on-primary": "#ffffff", "surface-container-high": "#e4e9ee", "on-error-container": "#93000a", "on-tertiary-fixed": "#2a0748", "on-error": "#ffffff", "secondary-fixed-dim": "#bcc7de", "surface-container-highest": "#dee3e8", "error-container": "#ffdad6", "surface-container-low": "#eff4f9", "on-secondary-fixed-variant": "#3c475a", "surface-bright": "#f5faff", "primary": "#3e662f", "on-surface-variant": "#42493e", "surface-container": "#e9eef3", "tertiary-fixed": "#f0dbff", "outline": "#73796d", "surface-dim": "#d5dbdf", "on-primary-fixed-variant": "#2a501c", "secondary-fixed": "#d8e3fb", "on-background": "#171c20", "background": "#f5faff", "on-surface": "#171c20", "on-secondary-container": "#586377", "tertiary-container": "#8866a8", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#deb7ff", "on-tertiary-fixed-variant": "#583877", "primary-fixed": "#c1efab"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+          },
+        },
+      }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; line-height: 1; text-transform: none; white-space: nowrap; }
+    .editorial-gradient { background: linear-gradient(135deg, #3e662f 0%, #567f46 100%); }
+    body { font-family: 'Manrope', sans-serif; background-color: #f5faff; }
+</style>
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-[#02140d]/90 backdrop-blur-lg border-b border-white/10 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between items-center h-24">
+      <a href="/" class="flex-shrink-0 flex items-center gap-3 group">
+        <img src="https://lunesdalehouse.co.uk/wp-content/uploads/2026/04/LunesdaleHouseLogo-e1775394242844.png" alt="Lunesdale House Logo" class="transition-transform group-hover:scale-105 opacity-90" style="height: 48px; width: auto; object-fit: contain;" onerror="this.style.display='none'">
+        <div class="flex flex-col">
+          <span class="font-headline text-2xl text-white font-bold tracking-tight leading-none mb-1 opacity-90">Lunesdale House</span>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center h-full space-x-2 text-stone-300">
+        <div class="relative group h-full flex items-center px-4">
+          <button class="flex items-center font-body font-semibold hover:text-primary-fixed transition-colors">
+            Care Home <span class="material-symbols-outlined ml-1 text-lg transition-transform group-hover:rotate-180">expand_more</span>
+          </button>
+          <div class="absolute top-[80px] left-1/2 -translate-x-1/2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 bg-surface-container-lowest border border-outline-variant/30 shadow-xl rounded-2xl overflow-hidden py-2 text-on-surface">
+            <a href="/residential-care/" class="block px-6 py-3 text-sm font-body hover:bg-surface-container-low hover:text-primary transition-colors">Residential Care</a>
+            <a href="/dementia-care/" class="block px-6 py-3 text-sm font-body hover:bg-surface-container-low hover:text-primary transition-colors">Dementia Care</a>
+            <a href="/respite-and-day-care/" class="block px-6 py-3 text-sm font-body hover:bg-surface-container-low hover:text-primary transition-colors">Respite & Day Care</a>
+            <a href="/specialist-palliative-care/" class="block px-6 py-3 text-sm font-body hover:bg-surface-container-low hover:text-primary transition-colors">Specialist & Palliative Care</a>
+            <div class="border-t border-outline-variant/30 my-1"></div>
+            <a href="/facilities-and-environment/" class="block px-6 py-3 text-sm font-body hover:bg-surface-container-low hover:text-primary transition-colors">Facilities & Environment</a>
+          </div>
+        </div>
+        <div class="relative group h-full flex items-center px-4">
+          <button class="flex items-center font-body font-semibold hover:text-primary-fixed transition-colors">
+            About <span class="material-symbols-outlined ml-1 text-lg transition-transform group-hover:rotate-180">expand_more</span>
+          </button>
+          <div class="absolute top-[80px] left-1/2 -translate-x-1/2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 bg-surface-container-lowest border border-outline-variant/30 shadow-xl rounded-2xl overflow-hidden py-2 text-on-surface">
+            <a href="/why-choose-us/" class="block px-6 py-3 text-sm font-body hover:bg-surface-container-low hover:text-primary transition-colors">Why Choose Us</a>
+            <a href="/meet-our-team/" class="block px-6 py-3 text-sm font-body hover:bg-surface-container-low hover:text-primary transition-colors">Meet Our Team</a>
+            <a href="/reviews/" class="block px-6 py-3 text-sm font-body hover:bg-surface-container-low hover:text-primary transition-colors">Reviews</a>
+            <a href="/gallery/" class="block px-6 py-3 text-sm font-body hover:bg-surface-container-low hover:text-primary transition-colors">Gallery</a>
+          </div>
+        </div>
+        <a href="/news/" class="px-4 font-body font-semibold hover:text-primary-fixed transition-colors">News</a>
+      </div>
+      <div class="hidden lg:flex items-center space-x-4">
+        <a href="#contact" class="font-body font-bold text-primary-fixed px-6 py-2.5 rounded-full border border-primary-fixed/50 hover:bg-primary-fixed/10 transition-all">Contact</a>
+        <button onclick="openBooking()" class="font-body font-bold text-emerald-950 bg-primary-fixed hover:bg-white px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">Book a visit</button>
+      </div>
+      <div class="lg:hidden"></div>
+    </div>
+  </div>
+</nav>

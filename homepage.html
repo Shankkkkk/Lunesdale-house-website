@@ -1,0 +1,283 @@
+<!-- Homepage for lunesdale house-->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#a6d391", "primary-container": "#567f46", "surface-tint": "#416831", "on-secondary-fixed": "#111c2d", "surface": "#f5faff", "secondary-container": "#d5e0f8", "inverse-on-surface": "#ecf1f6", "secondary": "#545f73", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "inverse-primary": "#a6d391", "on-primary-fixed": "#042100", "outline-variant": "#c2c9bb", "error": "#ba1a1a", "inverse-surface": "#2b3135", "on-tertiary-container": "#fffbff", "tertiary": "#6f4d8e", "surface-variant": "#dee3e8", "on-primary-container": "#f8ffee", "on-primary": "#ffffff", "surface-container-high": "#e4e9ee", "on-error-container": "#93000a", "on-tertiary-fixed": "#2a0748", "on-error": "#ffffff", "secondary-fixed-dim": "#bcc7de", "surface-container-highest": "#dee3e8", "error-container": "#ffdad6", "surface-container-low": "#eff4f9", "on-secondary-fixed-variant": "#3c475a", "surface-bright": "#f5faff", "primary": "#3e662f", "on-surface-variant": "#42493e", "surface-container": "#e9eef3", "tertiary-fixed": "#f0dbff", "outline": "#73796d", "surface-dim": "#d5dbdf", "on-primary-fixed-variant": "#2a501c", "secondary-fixed": "#d8e3fb", "on-background": "#171c20", "background": "#f5faff", "on-surface": "#171c20", "on-secondary-container": "#586377", "tertiary-container": "#8866a8", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#deb7ff", "on-tertiary-fixed-variant": "#583877", "primary-fixed": "#c1efab"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+</script>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+    }
+    .editorial-gradient {
+        background: linear-gradient(135deg, #3e662f 0%, #567f46 100%);
+    }
+    .master-wrapper {
+        min-height: max(884px, 100dvh);
+    }
+</style>
+
+<div class="master-wrapper bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed flex flex-col min-h-screen overflow-x-hidden">
+    
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-lg border-b border-outline-variant/30 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between items-center h-24">
+      
+      <a href="/" class="flex-shrink-0 flex items-center gap-3 group">
+        <img src="https://lunesdalehouse.co.uk/wp-content/uploads/2026/04/LunesdaleHouseLogo-e1775394242844.png" style="height: 48px; width: auto; object-fit: contain;" onerror="this.style.display='none'">
+        <div class="flex flex-col">
+          <span class="font-headline text-2xl text-primary font-bold tracking-tight leading-none mb-1">Lunesdale House</span>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center h-full space-x-2">
+        
+        <div class="relative group h-full flex items-center px-4">
+          <button class="flex items-center font-body font-semibold text-on-surface-variant hover:text-primary transition-colors">
+            Care Home
+            <span class="material-symbols-outlined ml-1 text-lg transition-transform group-hover:rotate-180">expand_more</span>
+          </button>
+          
+          <div class="absolute top-[80px] left-1/2 -translate-x-1/2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 bg-surface-container-lowest border border-outline-variant/30 shadow-xl rounded-2xl overflow-hidden py-2">
+            <a href="/residential-care/" class="block px-6 py-3 text-sm font-body text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">Residential Care</a>
+            <a href="/dementia-care/" class="block px-6 py-3 text-sm font-body text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">Dementia Care</a>
+            <a href="/respite-and-day-care/" class="block px-6 py-3 text-sm font-body text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">Respite & Day Care</a>
+            <a href="/specialist-palliative-care/" class="block px-6 py-3 text-sm font-body text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">Specialist & Palliative Care</a>
+            <div class="border-t border-outline-variant/30 my-1"></div>
+            <a href="/facilities-and-environment/" class="block px-6 py-3 text-sm font-body text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">Facilities & Environment</a>
+          </div>
+        </div>
+
+        <div class="relative group h-full flex items-center px-4">
+          <button class="flex items-center font-body font-semibold text-on-surface-variant hover:text-primary transition-colors">
+            About
+            <span class="material-symbols-outlined ml-1 text-lg transition-transform group-hover:rotate-180">expand_more</span>
+          </button>
+          
+          <div class="absolute top-[80px] left-1/2 -translate-x-1/2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 bg-surface-container-lowest border border-outline-variant/30 shadow-xl rounded-2xl overflow-hidden py-2">
+            <a href="/why-choose-us/" class="block px-6 py-3 text-sm font-body text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">Why Choose Us</a>
+            <a href="/meet-our-team/" class="block px-6 py-3 text-sm font-body text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">Meet Our Team</a>
+            <a href="/reviews/" class="block px-6 py-3 text-sm font-body text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">Reviews</a>
+            <a href="/gallery/" class="block px-6 py-3 text-sm font-body text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">Gallery</a>
+          </div>
+        </div>
+
+        <a href="/news/" class="px-4 font-body font-semibold text-on-surface-variant hover:text-primary transition-colors">News</a>
+      </div>
+
+      <div class="hidden lg:flex items-center space-x-4">
+        <a href="/contact-us/" class="font-body font-bold text-primary px-6 py-2.5 rounded-full border border-outline-variant hover:bg-surface-container hover:border-primary transition-all">
+          Contact
+        </a>
+        <a href="/contact-us/" class="font-body font-bold text-on-primary bg-primary hover:bg-primary-fixed-variant px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+          Book a visit
+        </a>
+      </div>
+      <div class="lg:hidden"></div>
+    </div>
+  </div>
+</nav>
+
+<section class="relative min-h-[60vh] lg:min-h-[80vh] py-24 flex items-center overflow-hidden bg-surface-container-low" id="home">
+  <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://lunesdalehouse.co.uk/wp-content/uploads/2026/04/lunesdalehousesunny.png');"></div>
+  <div class="absolute inset-0 z-[5] bg-stone-900/50"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-2xl text-white">
+      <span class="font-label text-tertiary-fixed tracking-widest uppercase mb-4 block">Established Heritage</span>
+      <h1 class="font-headline text-5xl md:text-7xl leading-tight mb-8 text-white drop-shadow-lg">Exceptional, compassionate care in the tranquil heart of Cumbria.</h1>
+      <div class="flex flex-wrap gap-4">
+        <a class="editorial-gradient text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 hover:scale-105 transition-transform duration-400" href="/contact-us/">
+          Book a Private Tour
+          <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+        </a>
+        <a class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-all" href="/contact-us/">
+          Request Brochure
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div class="p-8 bg-surface-container-low rounded-2xl">
+                <div class="font-headline text-5xl text-primary mb-2">1:1</div>
+                <p class="font-label text-secondary uppercase tracking-widest text-sm">Staff to Resident Ratio</p>
+            </div>
+            <div class="p-8 bg-surface-container-low rounded-2xl">
+                <div class="font-headline text-5xl text-primary mb-2">19</div>
+                <p class="font-label text-secondary uppercase tracking-widest text-sm">Exclusive Private Suites</p>
+            </div>
+            <div class="p-8 bg-surface-container-low rounded-2xl">
+                <div class="font-headline text-5xl text-primary mb-2">Low</div>
+                <p class="font-label text-secondary uppercase tracking-widest text-sm">Staff Turnover Rate</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-24" id="life-at-lunesdale">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-16 items-center mb-24">
+            <div class="w-full md:w-5/12">
+                <span class="text-tertiary font-semibold text-sm uppercase tracking-widest mb-4 block">Private Suites</span>
+                <h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-6">Your Sanctuary of Tranquility.</h2>
+                <p class="text-lg text-on-surface-variant leading-relaxed mb-8">Every ensuite is thoughtfully created to offer the comforts of home alongside the reassurance of dedicated support. Blending homely warmth with the quiet reassurance of attentive care, each ensuite is designed for comfort, privacy, and peace of mind.</p>
+                <a class="text-primary font-bold inline-flex items-center gap-2 hover:gap-4 transition-all" href="/residential-care/">
+                    Discover Accommodations
+                    <span class="material-symbols-outlined" data-icon="trending_flat">trending_flat</span>
+                </a>
+            </div>
+            <div class="w-full md:w-7/12">
+                <img alt="Private Suite" class="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover" data-alt="Opulent bedroom suite with silk linens, mahogany furniture, and large windows overlooking a misty forest landscape in Cumbria." src="https://lunesdalehouse.co.uk/wp-content/uploads/2026/03/unnamed-e1772619201229.jpg"/>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div class="md:col-span-8 group relative overflow-hidden rounded-2xl h-[500px]">
+            <img alt="Gardens" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lunesdalehouse.co.uk/wp-content/uploads/2026/02/5765140090849004716-1.jpg">
+            <div class="relative z-10 p-8 flex flex-col justify-end h-full">
+              <h3 class="text-3xl font-headline text-white mb-4">Heritage Gardens</h3>
+              <p class="text-stone-200 max-w-md">Outdoor spaces designed for mindful wandering and quiet reflection.</p>
+            </div>
+          </div>
+
+          <div class="md:col-span-4 flex flex-col gap-8">
+            <div class="bg-surface-container-high rounded-2xl p-8 flex-1 flex flex-col justify-center">
+              <span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="wine_bar">floor_lamp</span>
+              <h3 class="text-2xl font-headline mb-4">Social Enrichment</h3>
+              <p class="text-on-surface-variant text-sm">Curated events from chamber music to art masterclasses held in our sun-drenched sitting areas.</p>
+              <img alt="Social Area" class="mt-8 rounded-xl aspect-video object-cover" src="https://lunesdalehouse.co.uk/wp-content/uploads/2026/02/5765140090849004733.jpg">
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32 bg-surface-container-low relative overflow-hidden" id="reviews-section">
+  <div class="absolute -top-24 -left-24 w-96 h-96 bg-tertiary-container/10 rounded-full blur-3xl"></div>
+  <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+    <span class="material-symbols-outlined text-tertiary text-6xl mb-8" data-icon="format_quote">format_quote</span>
+    
+    <div class="min-h-[250px] flex items-center justify-center">
+      <div id="review-content" class="transition-opacity duration-300 ease-in-out opacity-100">
+        <blockquote id="review-quote" class="font-headline text-2xl md:text-4xl leading-tight text-emerald-950 dark:text-emerald-50 mb-12 italic"></blockquote>
+        <cite id="review-author" class="font-label uppercase tracking-[0.2em] text-tertiary font-bold not-italic"></cite>
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-6 mt-12">
+      <button onclick="prevReview()" class="w-12 h-12 rounded-full border border-emerald-950/20 dark:border-emerald-50/20 flex items-center justify-center text-emerald-950 dark:text-emerald-50 hover:bg-emerald-950/10 transition-colors" aria-label="Previous Review">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+      </button>
+      <button onclick="nextReview()" class="w-12 h-12 rounded-full border border-emerald-950/20 dark:border-emerald-50/20 flex items-center justify-center text-emerald-950 dark:text-emerald-50 hover:bg-emerald-950/10 transition-colors" aria-label="Next Review">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  const reviews = [
+    { text: "From the moment we walked through the doors, we knew this was somewhere special. The care our mother receives is delivered with such genuine kindness and quiet professionalism. It’s given us complete peace of mind seeing her settled, happy and treated with such dignity has meant the world to our family.", author: "— Daughter of a resident" },
+    { text: "The staff go above and beyond every single day. They don't just provide exceptional care; they provide true companionship and warmth. We couldn't have asked for a better environment for dad.", author: "— Son of a resident" },
+    { text: "A truly beautiful home with a team that clearly loves what they do. The food is excellent, the rooms are spotless, and the atmosphere is always so welcoming and calm.", author: "— Family member" }
+  ];
+  let currentIndex = 0;
+  const quoteEl = document.getElementById('review-quote');
+  const authorEl = document.getElementById('review-author');
+  const contentContainer = document.getElementById('review-content');
+
+  function displayReview(index) {
+    contentContainer.classList.remove('opacity-100');
+    contentContainer.classList.add('opacity-0');
+    setTimeout(() => {
+      quoteEl.textContent = `"${reviews[index].text}"`;
+      authorEl.textContent = reviews[index].author;
+      contentContainer.classList.remove('opacity-0');
+      contentContainer.classList.add('opacity-100');
+    }, 300);
+  }
+  function nextReview() { currentIndex = (currentIndex + 1) % reviews.length; displayReview(currentIndex); }
+  function prevReview() { currentIndex = (currentIndex - 1 + reviews.length) % reviews.length; displayReview(currentIndex); }
+  document.addEventListener('DOMContentLoaded', () => { displayReview(0); });
+</script>
+
+<section class="py-24" id="our-care">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div class="order-2 lg:order-1">
+        <img alt="Fine Dining" class="rounded-3xl shadow-xl w-full aspect-[4/5] object-cover" src="https://lunesdalehouse.co.uk/wp-content/uploads/2026/02/5765140090849004732-e1775052695900.jpg" />
+      </div>
+      <div class="order-1 lg:order-2 space-y-12">
+        <div>
+          <span class="text-tertiary font-semibold text-sm uppercase tracking-widest mb-4 block">The Culinary Experience</span>
+          <h2 class="font-headline text-4xl md:text-5xl mb-6">Nourishing meals, thoughtfully prepared.</h2>
+          <p class="text-lg text-on-surface-variant leading-relaxed">Our chefs work closely with nutritionists to craft seasonal menus that celebrate flavour while meeting individual dietary needs – because good food is at the heart of wellbeing.</p>
+        </div>
+        <div class="space-y-6">
+          <div class="flex gap-6 items-start">
+            <div class="bg-primary-fixed p-3 rounded-xl text-primary"><span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span></div>
+            <div>
+              <h4 class="font-bold text-xl mb-1">Choice at every meal</h4>
+              <p class="text-on-surface-variant">A daily selection of freshly prepared dishes, with alternatives always available to suit tastes, textures, and nutritional requirements.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start">
+            <div class="bg-secondary-fixed p-3 rounded-xl text-secondary"><span class="material-symbols-outlined" data-icon="local_cafe">local_cafe</span></div>
+            <div>
+              <h4 class="font-bold text-xl mb-1">Traditional afternoon tea</h4>
+              <p class="text-on-surface-variant">A cherished daily ritual – finger sandwiches, freshly baked scones, and fine teas served in our elegant drawing room.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-surface-container-low" id="location">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="text-tertiary font-semibold text-sm uppercase tracking-widest mb-4 block">Find Us</span>
+      <h2 class="font-headline text-4xl md:text-5xl mb-6">Come visit Lunesdale House</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">
+        Hale, Milnthorpe, Cumbria, LA7 7BN<br />
+        Use the map below to get directions or explore the area.
+      </p>
+    </div>
+
+    <div class="relative w-full h-0 pb-[56.25%] rounded-2xl overflow-hidden shadow-xl">
+      <iframe class="absolute top-0 left-0 w-full h-full" style="border:0;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4130.12369933804!2d-2.758719722263288!3d54.197406210704834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487c8532eba58f01%3A0xff27c0230e0c2963!2sLunesdale%20House!5e1!3m2!1sen!2suk!4v1775055591752!5m2!1sen!2suk"></iframe>
+    </div>
+
+    <div class="text-center mt-6">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Hale+Milnthorpe+Cumbria+LA7+7BN" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
+        <span class="material-symbols-outlined">directions</span> Get Directions (opens Google Maps)
+      </a>
+    </div>
+  </div>
+</section>
+
